@@ -1,22 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 150vw;
+    background-image: url(../assets/images/background.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+
+
+}
 
 .menu{
     background-color: black;
+    font-family: 'Supermercado One', cursive;
+    padding: 20px;
+    justify-content: space-between;
+    
 }
-
-
-.noDecore a:link, a:visited, a:active{
-text-decoration: none;
-list-style-type: none;
-
-}
-.title{
+.menu_logo{
     font-size: 3rem;
-    color: #EFB7B7;
-    font-family: 'Luckiest Guy', cursive;
+    color: rgb(241, 132, 179);
+    padding: 2rem;
+}
+.menu_titles{
+    display: inline;
 }
 .pages{
-    font-size: 1.5rem;
-    color: rgb(255, 255, 255);
-   
-    font-family:'Luckiest Guy', cursive;
+    color: rgb(155, 160, 160);
+}
+
+.home{
+    width: 1000px;
+    height: 800px;
+    margin: 50px;
+    padding: 70px;
+    background-color: black;
+    font-size: 30px;
+    color: #D8D9CF;
+    font-family: 'Supermercado One', cursive;
+    border-radius: 20px;
+}
+
+.home_img{
+   margin: 60px;
+    border-radius: 20px;
 }
