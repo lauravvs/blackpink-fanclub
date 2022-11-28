@@ -15,9 +15,11 @@ body{
 
 .menu{
     background-color: black;
-    
+    position: fixed;
+    z-index: 100;
     font-family: 'Supermercado One', cursive;
     padding: 20px;
+    width: 100%;
     
 }
 .menu_logo{
