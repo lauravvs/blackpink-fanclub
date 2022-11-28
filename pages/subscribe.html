@@ -4,12 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <form action="" method="post">
-      <fieldset>
-        <legend>Personal Information</legend>
+    <div class="menu">
+      <nav>
+        <div class="menu_titles">
+          <a href="../index.html" class="menu_logo">
+            <img src="../assets/images/logo.png" />
+          </a>
+
+          <a href="./news.html" class="pages">News</a>
+          <a href="./songs.html" class="pages">Songs</a>
+          <a href="./videos.html" class="pages">Videos</a>
+          <a href="./bornpinktour.html" class="pages"> Born Pink Tour</a>
+
+          <a href="./subscribe.html" class="subscribe_contact">Subscribe</a>
+
+          <a href="./contact.html" class="subscribe_contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+    <form class="form" action="" method="post">
+      <fieldset class="fieldset">
+        <legend class="pink_title">Personal Information</legend>
         <div>
           <label for="name">Name</label>
           <input id="name" type="text" placeholder="your name" />
@@ -36,7 +61,7 @@
       </fieldset>
 
       <div>
-        <p>Would you like to get more information and updates on you mail?</p>
+        <p>Would you like to get more information and updates on your mail?</p>
         <div>
           <label for="yes">
             <input type="checkbox" name="" id="yes" value="yes" />Yes</label
@@ -46,6 +71,10 @@
           >
         </div>
       </div>
+      <button class="btn">Subscribe</button>
     </form>
+    <footer>
+      <p class="footer">BLACKPINK in your area</p>
+    </footer>
   </body>
 </html>
