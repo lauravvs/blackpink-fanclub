@@ -18,8 +18,8 @@
     <header>
       <div class="menu">
         <nav>
-          <div class="menu_titles">
-            <a href="index.html" class="menu_logo">
+          <div class="menu__titles">
+            <a href="index.html" class="menu__logo">
               <img src="./assets/images/logo.png" />
             </a>
 
@@ -40,7 +40,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="main">
       <div class="box1">
         <h1>Welcome to this BLACKPINK fan site!</h1>
         <p>
@@ -48,12 +48,28 @@
           videos, their songs, concerts and last news about the group and the
           girls! If you want more content, please subscribe!
         </p>
-        <img class="home_img" src="./assets/images/homegif.gif" />
+        <img class="box1__img" src="./assets/images/homegif.gif" />
+      </div>
+
+      <div class="home__gifs">
+        <a href="./pages/jisoo.html">
+          <img class="home__gif" src="./assets/images/jisoo_home.gif"
+        /></a>
+        <a href="./pages/rose.html">
+          <img class="home__gif" src="./assets/images/rose_home.gif" />
+        </a>
+        <a href="./pages/lisa.html">
+          <img class="home__gif" src="./assets/images/lisa_home.gif" />
+        </a>
+        <a href="./pages/jennie.html">
+          <img class="home__gif" src="./assets/images/jennie_home.gif"
+        /></a>
       </div>
 
       <div class="box2">
-        <p>BLACKPINK "Shut Down" music video is available now!</p>
+        <h2>BLACKPINK "Shut Down" music video is available now!</p>
         <iframe
+          class="home__video"
           width="900"
           height="600"
           src="https://www.youtube.com/embed/POe9SOEKotk"
@@ -62,11 +78,6 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-      </div>
-
-      <div class="box3">
-        <p>Dont forget to subscribe!</p>
-        <a href="./pages/subscribe.html" class="subscribe_contact">Subscribe</a>
       </div>
     </main>
 
