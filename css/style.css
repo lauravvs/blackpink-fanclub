@@ -23,7 +23,7 @@ body{
     padding: 20px;
     width: 100%;
     top: 0;
-    overflow ;
+    
     
 }
 .menu__logo{
@@ -33,7 +33,7 @@ body{
 }
 .menu__titles{
 
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 .pages{
     color: rgb(204, 213, 213);
@@ -53,19 +53,20 @@ body{
     color: rgb(204, 213, 213);
 }
 
-.main{
+main{
     margin:150px 380px;
 }
+
 
 .box1{
  
     width: 1000px;
     height: 590px;
-   padding: 90px;
-  
+   padding: 70px;
+    margin-bottom: 40px;
     background-color: black;
     opacity: 90%;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #D8D9CF;
     font-family: 'Supermercado One', cursive;
     border-radius: 20px;
@@ -74,8 +75,7 @@ body{
 }
 
 .box1__img{
-    opacity: 100%;
-   margin: 50px 100px;
+    margin: 20px 95px;
     border-radius: 20px;
 }
 .box2{
@@ -84,10 +84,11 @@ body{
     padding: 70px;
     background-color: rgb(180, 128, 144);
     opacity: 90%;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #ffffff;
     font-family: 'Supermercado One', cursive;
     border-radius: 20px;
+    margin-bottom: 20px;
     
 }
 
@@ -95,16 +96,12 @@ body{
     border-radius: 50%;
     width: 250px;
     height: 250px;
-    margin: 50px 15px;
+    margin: 50px 10px;
 }
 .home__video{
     margin: 60px 50px;
 }
 
-
-.news{
-    margin: 100px;
-}
 .pink__title{
     color: rgb(199, 94, 136);
     font-size: 45px;
@@ -112,7 +109,9 @@ body{
     font-family:'Supermercado One',
         cursive;
 }
-
+.news{
+    margin-bottom: 30px;
+}
 .news__img{
     width: 600px;
     height: 400px;
@@ -129,7 +128,7 @@ body{
     font-family: 'Supermercado One', cursive;
    
     padding: 1rem;
-    margin: 1rem;
+    margin: 30px 60px;
     background-color: #121212;
     opacity: 90%;
     border-radius: 3rem;
@@ -158,7 +157,7 @@ body{
 .bptImg{
     width: 650px;
     height: 730px;
-    margin: 25px 250px;
+    margin: 25px 230px;
 }
 .footer{
     background-color: #0f0f0e;
@@ -200,3 +199,17 @@ font-size: 25px;
     margin: 40px 450px;
    
 }
+ @media screen and (max-width:480px) {
+    menu{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        }
+    home__gif{
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+ }
