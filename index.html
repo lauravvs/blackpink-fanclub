@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Londrina+Outline&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
@@ -18,71 +19,119 @@
     <header>
       <div class="menu">
         <nav>
-          <div class="menu__titles">
-            <a href="index.html" class="menu__logo">
-              <img src="./assets/images/logo.png" />
-            </a>
+          <a href="index.html">
+            <img class="menu__logo" src="./assets/images/logo.png" />
+          </a>
 
-            <a href="./pages/news.html" class="pages">News</a>
-            <a href="./pages/songs.html" class="pages">Songs</a>
-            <a href="./pages/videos.html" class="pages">Videos</a>
-            <a href="./pages/bornpinktour.html" class="pages">
-              Born Pink Tour</a
-            >
-
-            <a href="./pages/subscribe.html" class="subscribe_contact"
-              >Subscribe</a
-            >
-
-            <a href="./pages/contact.html" class="subscribe_contact">Contact</a>
-          </div>
+          <a href="./pages/news.html" class="pages">News</a>
+          <a href="./pages/songs_videos.html" class="pages">Songs & Videos</a>
+          <a href="./pages/pinks.html" class="pages">Pinks</a>
+          <a href="./pages/subscribe.html" class="pages">Subscribe</a>
         </nav>
       </div>
     </header>
 
     <main>
-      <div class="box1">
-        <h1>Welcome to this BLACKPINK fan site!</h1>
-        <p>
+      <div class="home">
+        <h1 class="title">Welcome to this BLACKPINK fan site!</h1>
+        <p class="home_paragraph">
           This is a place where you can find information about the pinks,
           videos, their songs, concerts and last news about the group and the
           girls! If you want more content, please subscribe!
         </p>
-        <img class="box1__img" src="./assets/images/homegif.gif" />
+        <img class="home_gif" src="./assets/images/homegif.gif" />
       </div>
 
-      <div class="home__gifs">
-        <a href="./pages/jisoo.html">
-          <img class="home__gif" src="./assets/images/jisoo_home.gif"
-        /></a>
-        <a href="./pages/rose.html">
-          <img class="home__gif" src="./assets/images/rose_home.gif" />
-        </a>
-        <a href="./pages/lisa.html">
-          <img class="home__gif" src="./assets/images/lisa_home.gif" />
-        </a>
-        <a href="./pages/jennie.html">
-          <img class="home__gif" src="./assets/images/jennie_home.gif"
-        /></a>
-      </div>
-
-      <div class="box2">
-        <h2>BLACKPINK "Shut Down" music video is available now!</h2>
+      <div class="home__two">
+        <h2 class="home_two--title">BLACKPINK "Shut Down"</h2>
+        <h2 class="home_two--title2">Listen SHUT DOWN on Spotify</h2>
         <iframe
-          class="home__video"
-          width="900"
-          height="600"
-          src="https://www.youtube.com/embed/POe9SOEKotk"
-          title="YouTube video player"
-          frameborder="20px"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          class="home__spotify"
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/0ARKW62l9uWIDYMZTUmJHF?utm_source=generator"
+          width="100%"
+          height="352"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
         ></iframe>
+        <h2 class="home_two--title3">
+          Click on the gif below to watch the video
+        </h2>
+
+        <a href="https://youtu.be/POe9SOEKotk" target="_blank">
+          <img class="home__video" src="./assets/images/shutdown_gif.gif" />
+        </a>
+      </div>
+      <div>
+        <h1 class="tour__title">Born Pink World Tour</h1>
+        <div class="tour">
+          <img
+            class="tour__pic"
+            src="./assets/images/tour_poster_asia_1080x1620_v01s.jpg"
+          />
+          <img
+            class="tour__pic"
+            src="./assets/images/tour_poster_europe_1080x1620_v03s.jpg"
+          />
+          <img
+            class="tour__pic"
+            src="./assets/images/2a_1080x1620_v02_v02.jpg"
+          />
+          <img
+            class="tour__pic"
+            src="./assets/images/2b_1080x1620_v05_v02.jpg"
+          />
+        </div>
+      </div>
+      <div>
+        <h1 class="tour__title">BLACKPINK SOCIAL MEDIA</h1>
+        <div class="socialContent">
+          <img src="./assets/images/Twitter.png" class="icon" />
+          <a
+            href="https://twitter.com/BLACKPINK"
+            target="_blank"
+            class="twitter__acc"
+            >@BLACKPINKOFFICIAL</a
+          >
+
+          <img src="./assets/images/Instagram.jpg" class="icon" />
+          <a
+            href="https://www.instagram.com/blackpinkofficial/?hl=en"
+            target="_blank"
+            >@BLACKPINKOFFICIAL</a
+          >
+          <img src="./assets/images/Instagram.jpg" class="icon" />
+
+          <a href="https://www.instagram.com/sooyaaa__/?hl=en" target="_blank"
+            >@sooyaaa__</a
+          >
+          <img src="./assets/images/Instagram.jpg" class="icon" />
+
+          <a
+            href="https://www.instagram.com/jennierubyjane/?hl=en"
+            target="_blank"
+            >@jennierubyjane</a
+          >
+          <img src="./assets/images/Instagram.jpg" class="icon" />
+          <a
+            href="https://www.instagram.com/roses_are_rosie/?hl=en"
+            target="_blank"
+            >@roses_are_rosie</a
+          >
+          <img src="./assets/images/Instagram.jpg" class="icon" />
+          <a
+            href="https://www.instagram.com/lalalalisa_m/?hl=en"
+            target="_blank"
+            >@lalalalisa_m</a
+          >
+        </div>
       </div>
     </main>
 
     <footer>
-      <p class="footer">BLACKPINK in your area</p>
+      <p class="footer">BLACKPINK in your area ©</p>
     </footer>
   </body>
 </html>

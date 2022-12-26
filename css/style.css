@@ -16,107 +16,199 @@ body{
 
 
 .menu{
-    background-color: black;
-    position: fixed;
-    z-index: 100;
-    font-family: 'Supermercado One', cursive;
-    padding: 20px;
-    width: 100%;
-    top: 0;
+    background-color: #0f0f0e;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    
     
     
 }
 .menu__logo{
-
-    color: rgb(241, 132, 179);
-    padding: 3rem;
+    width: 300px;
+    
 }
-.menu__titles{
 
-    font-size: 1.8rem;
-}
 .pages{
+    font-size: 1.5rem;
     color: rgb(204, 213, 213);
     text-decoration: none;
-    padding: 1rem;
-    margin: 2rem;
 }
 .pages:hover{
     color: rgb(241, 132, 179);
 }
-.subscribe_contact{
-    color: rgb(199, 94, 136);
-    text-decoration: none;
-    padding: 1rem;
-}
-.subscribe_contact:hover{
-    color: rgb(204, 213, 213);
-}
+
 
 main{
     margin:150px 380px;
 }
 
+.home{
+    padding: 20px;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas: 
+    "title title"
+    "home_gif home_paragraph";
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
 
-.box1{
- 
-    width: 1000px;
-    height: 590px;
-   padding: 70px;
-    margin-bottom: 40px;
-    background-color: black;
-    opacity: 90%;
-    font-size: 1.25rem;
-    color: #D8D9CF;
-    font-family: 'Supermercado One', cursive;
-    border-radius: 20px;
+}
+.title{
+    font-family: 'Londrina Outline', cursive;
+    color: rgb(199, 94, 136);
+    font-size: 4rem;
+    grid-area: title;
+    text-align: center;
     
+}
+.home_gif{
+    width: 400px;
+    border-radius: 10%;
+    grid-area: home_gif;
+}
+.home_paragraph{
+    font-family: inherit;
+    font-size: 1.5rem;
+    
+    grid-area: home_paragraph;
+}
+
+.home__two{
+    background-color: #0f0f0e;
    
-}
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(3 1fr);
+    grid-template-areas: 
+    "home_two--title home_two--title "
+    "home_two--title2 home_two--title3"
+    "home__spotify home__video"
+    ;
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+    padding: 100px;
+    border-radius: 5%;
 
-.box1__img{
-    margin: 20px 95px;
-    border-radius: 20px;
 }
-.box2{
-    width: 1000px;
-    height: 700px;
-    padding: 70px;
-    background-color: rgb(180, 128, 144);
-    opacity: 90%;
-    font-size: 1.25rem;
-    color: #ffffff;
-    font-family: 'Supermercado One', cursive;
-    border-radius: 20px;
-    margin-bottom: 20px;
+.home_two--title{
+    font-family: 'Londrina Outline', cursive;
+        color: rgb(199, 94, 136);
+        font-size: 3rem;
+        text-align: center;
+        grid-area: home_two--title;
+    }
+
+.home_two--title2{
+    grid-area: home_two--title2;
+    color: rgb(171, 182, 182);
+
+}
+.home__spotify{
+    grid-area: home__spotify;
     
 }
-
-.home__gif {
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    margin: 50px 10px;
+.home_two--title3{
+    grid-area: home_two--title3;
+    color: rgb(171, 182, 182);
 }
 .home__video{
-    margin: 60px 50px;
+    grid-area: home__video;
 }
 
-.pink__title{
-    color: rgb(199, 94, 136);
-    font-size: 45px;
-    text-align: center;
-    font-family:'Supermercado One',
-        cursive;
+.tour{
+    
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    
 }
-.news{
-    margin-bottom: 30px;
+ 
+.tour__title{
+    font-family: 'Londrina Outline', cursive;
+        color: rgb(195, 102, 139);
+        font-size: 3rem;
+        text-align: center;
+        grid-area: title;
+    }
+
+.tour__pic{
+    width: 300px;
+    padding: 10px;
+}
+
+.socialContent {
+   /* background-color: rgb(141, 91, 112); */
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: 60px 60px;
+    grid-template-rows: 70px 70px 70px 70px 70px 70px;
+    margin: 40px 450px;
+
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+  
+
+.new1{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr ;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-areas:
+    "news__title1 news__title1"
+    "news__img news__ph1"
+    "news__img news__ph2"
+    ;
+}
+.news__title1{
+    font-size: 2rem;
+    color: rgb(136, 74, 99);
+    grid-area:news__title1 ;
 }
 .news__img{
     width: 600px;
-    height: 400px;
-    margin: 20px 150px;
+    padding: 20px;
+    grid-area:news__img ;
 }
+.news__ph1{
+    grid-area: news__ph1;
+}
+.news__ph2{
+    grid-area: news__ph2;
+}
+.songs{
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: repeat(2 1fr);
+    grid-template-areas:
+    "song__card song__card song__card song__card"
+    "song__card song__card song__card song__card"
+    ;
+    
+}
+.song__card{
+    padding: 10px;
+    width: 300px;
+
+}
+.videos{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(4 1fr);
+    grid-template-areas:
+    "video__card video__card"
+    "video__card video__card"
+    "video__card video__card"
+    "video__card video__card"
+    ;
+}
+
 .fieldset{
     padding: 2rem;
     text-align: center;
@@ -125,7 +217,7 @@ main{
     width: 1000px;
     height: 650px;
     font-size: 30px;
-    font-family: 'Supermercado One', cursive;
+   
    
     padding: 1rem;
     margin: 30px 60px;
@@ -141,75 +233,40 @@ main{
     font-size: 20px;
     padding: 1rem;
     margin: 1rem;
-    font-family: 'Supermercado One', cursive;
 }
+   
 .btn{
     border: none;
         border-radius: 4rem;
         font-size: 25px;
         padding: 1rem;
         margin: 2rem;
-        font-family: 'Supermercado One', cursive;
+        
 }
 .btn:hover{
     background-color:rgb(199, 94, 136) ;
 }
-.bptImg{
-    width: 650px;
-    height: 730px;
-    margin: 25px 230px;
-}
-.footer{
-    background-color: #0f0f0e;
-    font-family: 'Supermercado One', cursive;
-    padding: 40px;
-    color: rgb(199, 94, 136);
-    font-size: 30px;
-    text-align: center;
-}
+
+
 .pink__pic{
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 430px;
     border-radius: 20%;
     margin: 30px 420px;
 }
 .pink__card{
-   box-sizing: border-box;
-font-family: 'Supermercado One', cursive;
-font-size: 25px;
-}
-.icon{
-    width: 50px;
-    height: 50px;
-}
-.songbox {
-   display: grid;
-   column-gap: 20px;
-   grid-template-columns: 600px 600px;
-  
-  
-   
+text-align: center;
+font-size: 1.5rem;
 
 }
-.socialContent{
-    display: grid;
-    column-gap: 5px;
-    grid-template-columns: 60px 60px;
-    grid-template-rows: 70px 70px 70px 70px 70px 70px;
-    margin: 40px 450px;
-   
+
+
+
+.footer {
+    background-color: #0f0f0e;
+    padding: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(185, 178, 181);
 }
- @media screen and (max-width:480px) {
-    menu{
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        }
-    home__gif{
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
- }
