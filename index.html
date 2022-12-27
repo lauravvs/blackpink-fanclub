@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Londrina+Outline&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>BLINKS CLUB</title>
   </head>
@@ -39,14 +40,28 @@
           videos, their songs, concerts and last news about the group and the
           girls! If you want more content, please subscribe!
         </p>
-        <img class="home_gif" src="./assets/images/homegif.gif" />
+        <img
+          class="home_gif"
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          src="./assets/images/homegif.gif"
+        />
       </div>
 
       <div class="home__two">
         <h2 class="home_two--title">BLACKPINK "Shut Down"</h2>
-        <h2 class="home_two--title2">Listen SHUT DOWN on Spotify</h2>
+        <h2
+          class="home_two--title2"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
+          Listen SHUT DOWN on Spotify
+        </h2>
         <iframe
           class="home__spotify"
+          data-aos="fade-up"
+          data-aos-duration="3000"
           style="border-radius: 12px"
           src="https://open.spotify.com/embed/track/0ARKW62l9uWIDYMZTUmJHF?utm_source=generator"
           width="100%"
@@ -56,17 +71,30 @@
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
         ></iframe>
-        <h2 class="home_two--title3">
+        <h2
+          class="home_two--title3"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           Click on the gif below to watch the video
         </h2>
 
         <a href="https://youtu.be/POe9SOEKotk" target="_blank">
-          <img class="home__video" src="./assets/images/shutdown_gif.gif" />
+          <img
+            class="home__video"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            src="./assets/images/shutdown_gif.gif"
+          />
         </a>
       </div>
       <div>
         <h1 class="tour__title">Born Pink World Tour</h1>
-        <div class="tour">
+        <div
+          class="tour"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
           <img
             class="tour__pic"
             src="./assets/images/tour_poster_asia_1080x1620_v01s.jpg"
@@ -87,7 +115,7 @@
       </div>
       <div>
         <h1 class="tour__title">BLACKPINK SOCIAL MEDIA</h1>
-        <div class="socialContent">
+        <div class="socialContent" data-aos="fade-up" data-aos-duration="3000">
           <img src="./assets/images/Twitter.png" class="icon" />
           <a
             href="https://twitter.com/BLACKPINK"
@@ -133,5 +161,9 @@
     <footer>
       <p class="footer">BLACKPINK in your area ©</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
