@@ -1,8 +1,9 @@
 .socialContent {
-  display: grid;
-  column-gap: 5px;
-  grid-template-columns: repeat(2 1fr);
-  grid-template-rows: repeat(6 1fr);
+  justify-content: center;
+}
+.social__card {
+  display: flex;
+  margin: 50px;
   justify-content: center;
 }
 

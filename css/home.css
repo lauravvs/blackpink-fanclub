@@ -12,8 +12,9 @@
   margin-top: 150px;
 }
 .home_gif {
-  width: 450px;
+  width: 400px;
   border-radius: 10%;
+  border: 10px dotted rgb(243, 160, 201);
 }
 .home_paragraph {
   font-family: inherit;

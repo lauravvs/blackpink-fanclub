@@ -15,6 +15,7 @@
 .tour__pic {
   width: 300px;
   margin: 30px;
+  border: 8px dashed rgb(215, 148, 186);
 }
 .tour__pic:hover {
   transform: scale(1.3);
