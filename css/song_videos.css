@@ -1,0 +1,76 @@
+.song__title {
+  font-family: "Londrina Outline", cursive;
+  color: rgb(199, 94, 136);
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 150px;
+}
+.songs {
+  display: grid;
+  grid-template-columns: repeat(4 1fr);
+  grid-template-rows: repeat(2 1fr);
+  grid-template-areas:
+    "song__card song__card song__card song__card"
+    "song__card song__card song__card song__card";
+  justify-content: center;
+}
+.song__card {
+  margin: 20px;
+  width: 320px;
+}
+.song__card:hover {
+  transform: scale(1.05);
+}
+.videos {
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+  grid-template-rows: repeat(4 1fr);
+  grid-template-areas:
+    "video__card video__card"
+    "video__card video__card"
+    "video__card video__card"
+    "video__card video__card";
+  justify-content: center;
+}
+.video__card {
+  padding: 20px;
+}
+.video__card:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 1400px) {
+  .songs {
+    grid-template-areas:
+      "song__card song__card"
+      "song__card song__card"
+      "song__card song__card"
+      "song__card song__card";
+  }
+}
+@media screen and (max-width: 960px) {
+  .videos {
+    grid-template-areas:
+      "video__card"
+      "video__card"
+      "video__card"
+      "video__card"
+      "video__card"
+      "video__card"
+      "video__card"
+      "video__card";
+  }
+}
+@media screen and (max-width: 768px) {
+  .song__card {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .songs {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 460px) {
+}

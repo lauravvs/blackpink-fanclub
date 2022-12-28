@@ -13,69 +13,75 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../css/subscribe.css" />
     <title>BLINKS CLUB</title>
   </head>
   <body>
     <header>
       <div class="menu">
         <nav>
-          <div class="menu__titles">
-            <a href="../index.html">
-              <img class="menu__logo" src="../assets/images/logo.png" />
-            </a>
-
-            <a href="./news.html" class="pages">News</a>
-            <a href="./songs_videos.html" class="pages">Songs & Videos</a>
-            <a href="./pinks.html" class="pages">Pinks</a>
-            <a href="./subscribe.html" class="pages">Subscribe</a>
+          <a href="../index.html">
+            <img class="menu__logo" src="../assets/images/logo.png" />
+          </a>
+          <div class="page">
+            <a href="../pages/news.html" class="pages">News</a>
+            <a href="../pages/songs_videos.html" class="pages"
+              >Songs & Videos</a
+            >
+            <a href="../pages/pinks.html" class="pages">Pinks</a>
+            <a href="../pages/subscribe.html" class="pages">Subscribe</a>
           </div>
         </nav>
       </div>
     </header>
     <main>
-      <form class="form" action="" method="post">
-        <fieldset class="fieldset">
-          <legend class="tour__title">Personal Information</legend>
-          <div>
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="your name" />
-          </div>
+      <div class="main__form">
+        <form class="form" action="" method="post">
+          <fieldset class="fieldset">
+            <legend class="tour__title">Personal Information</legend>
+            <div>
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="your name" />
+            </div>
+
+            <div>
+              <label for="mail">Email</label>
+              <input id="mail" type="email" placeholder="your email" />
+            </div>
+
+            <div>
+              <label for="password">Password</label>
+              <input
+                id="password"
+                type="password"
+                placeholder="create a password"
+              />
+            </div>
+
+            <div>
+              <label for="birthday">Birthday</label>
+              <input id="birthaday" type="date" />
+            </div>
+          </fieldset>
 
           <div>
-            <label for="mail">Email</label>
-            <input id="mail" type="email" placeholder="your email" />
+            <p>
+              Would you like to get more information and updates on your mail?
+            </p>
+            <div>
+              <label for="yes">
+                <input type="checkbox" name="" id="yes" value="yes" />
+                Yes</label
+              >
+              <label for="no">
+                <input type="checkbox" name="" id="no" value="no" /> No</label
+              >
+            </div>
           </div>
-
-          <div>
-            <label for="password">Password</label>
-            <input
-              id="password"
-              type="password"
-              placeholder="create a password"
-            />
-          </div>
-
-          <div>
-            <label for="birthday">Birthday</label>
-            <input id="birthaday" type="date" />
-          </div>
-        </fieldset>
-
-        <div>
-          <p>
-            Would you like to get more information and updates on your mail?
-          </p>
-          <div>
-            <label for="yes">
-              <input type="checkbox" name="" id="yes" value="yes" /> Yes</label
-            >
-            <label for="no">
-              <input type="checkbox" name="" id="no" value="no" /> No</label
-            >
-          </div>
-        </div>
-        <button class="btn">Subscribe</button>
-      </form>
+          <button class="btn">Subscribe</button>
+        </form>
+      </div>
     </main>
     <footer>
       <p class="footer">BLACKPINK in your area ©</p>

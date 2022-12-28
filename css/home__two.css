@@ -1,0 +1,45 @@
+.home__two {
+  background-color: #0f0f0e;
+}
+.home_two--title {
+  font-family: "Londrina Outline", cursive;
+  color: rgb(199, 94, 136);
+  font-size: 3rem;
+  text-align: center;
+}
+.home_two--title2 {
+  color: rgb(212, 212, 211);
+  font-size: 1.8rem;
+}
+.container__home--card {
+  margin: 30px;
+}
+.home__spotify {
+  width: 400px;
+  margin: 50px;
+}
+.home__video--img {
+  margin: 50px;
+  width: 500px;
+  border-radius: 5%;
+}
+.home__video--img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 1200px) {
+  .container__home {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home_two--title2 {
+    font-size: 1.4rem;
+  }
+  .home__spotify {
+    width: 250px;
+  }
+  .home__video--img {
+    width: 270px;
+  }
+}

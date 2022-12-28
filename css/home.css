@@ -1,0 +1,42 @@
+.container__home {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.title {
+  font-family: "Londrina Outline", cursive;
+  color: rgb(199, 94, 136);
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 150px;
+}
+.home_gif {
+  width: 450px;
+  border-radius: 10%;
+}
+.home_paragraph {
+  font-family: inherit;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1400px) {
+  .container__home {
+    margin: 50px 500px;
+  }
+  .home__gif {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container__home {
+    flex-direction: column;
+  }
+  .home_gif {
+    width: 380px;
+  }
+  .home_paragraph {
+    font-size: 1.4rem;
+  }
+}

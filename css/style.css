@@ -1,611 +1,111 @@
-*{
-
-    margin: 0;
-    padding: 0;
-    
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
+body {
+  background-image: url(../assets/images/background.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
 
+.footer {
+  background-color: #0f0f0e;
+  padding: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(185, 178, 181);
+}
+@media screen and (min-width: 1400px) {
+  body {
     background-image: url(../assets/images/background.jpg);
     background-size: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     overflow-x: hidden;
-   
-}
-
-
-.menu{
+  }
+  .menu {
     background-color: #0f0f0e;
-    padding: 15px;
-    display: flex;
-    flex-direction: row;
-    
-    
-    
-}
-.menu__logo{
-    width: 300px;
-    
-}
-
-.pages{
-    font-size: 1.5rem;
-    color: rgb(204, 213, 213);
-    text-decoration: none;
-}
-.pages:hover{
-    color: rgb(241, 132, 179);
-}
-
-
-main{
-    margin:150px 380px;
-}
-
-.home{
-    padding: 20px;
-    display: grid;
-    grid-template-columns:  1fr 1fr;
-    grid-template-rows: 0.5fr 1fr;
-    grid-template-areas: 
-    "title title"
-    "home_gif home_paragraph";
-    grid-column-gap: 2px;
-    grid-row-gap: 2px;
-
-}
-.title{
-    font-family: 'Londrina Outline', cursive;
-    color: rgb(199, 94, 136);
-    font-size: 4rem;
-    grid-area: title;
-    text-align: center;
-    animation-timing-function: infinite;
-    animation: pulse;
-    
-}
-.home_gif{
-    width: 400px;
-    border-radius: 10%;
-    grid-area: home_gif;
-}
-.home_paragraph{
-    font-family: inherit;
-    font-size: 1.5rem;
-    
-    grid-area: home_paragraph;
-}
-
-.home__two{
-    background-color: #0f0f0e;
-   
-    display: grid;
-    grid-template-columns: repeat(2 1fr);
-    grid-template-rows: repeat(3 1fr);
-    grid-template-areas: 
-    "home_two--title home_two--title "
-    "home_two--title2 home_two--title3"
-    "home__spotify home__video"
-    ;
-    grid-column-gap: 100px;
-    grid-row-gap: 50px;
-    padding: 100px;
-    
-
-}
-.home_two--title{
-    font-family: 'Londrina Outline', cursive;
-        color: rgb(199, 94, 136);
-        font-size: 3rem;
-        text-align: center;
-        grid-area: home_two--title;
-    }
-
-.home_two--title2{
-    grid-area: home_two--title2;
-    color: rgb(171, 182, 182);
-
-}
-.home__spotify{
-    grid-area: home__spotify;
-    
-}
-.home_two--title3{
-    grid-area: home_two--title3;
-    color: rgb(171, 182, 182);
-}
-.home__video{
-    grid-area: home__video;
-}
-.home__video:hover{
-    transform: scale(2)
-}
-
-.tour{
-    
-    display: flex;
-    flex-direction: row;
-    padding: 50px;
-    
-}
- 
-.tour__title{
-    font-family: 'Londrina Outline', cursive;
-        color: rgb(195, 102, 139);
-        font-size: 3rem;
-        text-align: center;
-        grid-area: title;
-    }
-
-.tour__pic{
-    width: 300px;
     padding: 10px;
-}
+  }
 
-.socialContent {
-    display: grid;
-    column-gap: 5px;
+  .pages {
+    font-size: 1.2rem;
+  }
+  .home__two {
+    background-color: #0f0f0e;
+    grid-column-gap: 80px;
+    grid-row-gap: 30px;
+    padding: 100px;
+  }
+  .home_two--title {
+    font-size: 2rem;
+  }
+
+  .home_two--title2 {
+    font-size: 1.2rem;
+  }
+
+  .home__spotify {
+    width: 280px;
+  }
+
+  .home_two--title3 {
+    font-size: 1.2rem;
+  }
+
+  .socialContent {
     grid-template-columns: 60px 60px;
     grid-template-rows: 70px 70px 70px 70px 70px 70px;
-    margin: 40px 450px;
-
-}
-
-.icon {
-    width: 50px;
-    height: 50px;
-}
-
-  
-
-.new1{
-    padding: 50px;
-    display: grid;
-    grid-template-columns: 1fr;
-        grid-template-rows: 0.3fr 1fr 1fr;
-        grid-template-areas:
-            "news__title1 "
-            "news__img"
-            "news__ph1"
-    ;
-}
-.news__title1{
-    font-size: 2rem;
-    color: rgb(136, 74, 99);
-    grid-area:news__title1 ;
-}
-.news__img{
-    width: 600px;
+    margin: 40px 230px;
+  }
+  .news__img {
+    width: 400px;
     padding: 20px;
-    grid-area:news__img ;
-}
-.news__ph1{
-    grid-area: news__ph1;
-}
-.news__ph2{
-    grid-area: news__ph2;
-}
-.songs{
-    display: grid;
-    grid-template-columns: repeat(4 1fr);
-    grid-template-rows: repeat(2 1fr);
-    grid-template-areas:
-    "song__card song__card song__card song__card"
-    "song__card song__card song__card song__card"
-    ;
-    
-}
-.song__card{
-    padding: 10px;
-    width: 300px;
-
-}
-.song__card:hover{
-    transform: scale(1.05);
-}
-.videos{
+    grid-area: news__img;
+  }
+  .songs {
     display: grid;
     grid-template-columns: repeat(2 1fr);
     grid-template-rows: repeat(4 1fr);
     grid-template-areas:
-    "video__card video__card"
-    "video__card video__card"
-    "video__card video__card"
-    "video__card video__card"
-    ;
-}
-.video__card:hover{
-    transform: scale(1.05);
-}
-.fieldset{
-    padding: 2rem;
-    text-align: center;
-}
-.form{
-    width: 1000px;
+      "song__card song__card "
+      "song__card song__card "
+      "song__card song__card "
+      "song__card song__card ";
+  }
+  .form {
+    width: 700px;
     height: 650px;
     font-size: 30px;
-   
-   
     padding: 1rem;
     margin: 30px 60px;
-    background-color: #121212;
-    opacity: 90%;
-    border-radius: 3rem;
-    color: rgb(171, 165, 168);
+  }
 
-}
-#name, #mail, #password, #birthaday{
-    border:none;
-    border-radius: 4rem;
-    font-size: 20px;
-    padding: 1rem;
-    margin: 1rem;
-}
-   
-.btn{
-    border: none;
-        border-radius: 4rem;
-        font-size: 25px;
-        padding: 1rem;
-        margin: 2rem;
-        
-}
-.btn:hover{
-    background-color:rgb(199, 94, 136) ;
-}
-
-
-.pink__pic{
-    width: 350px;
-    height: 430px;
-    border-radius: 20%;
-    margin: 30px 420px;
-}
-.pink__card{
-text-align: center;
-font-size: 1.5rem;
-
-}
-
-
-
-.footer {
-    background-color: #0f0f0e;
-    padding: 26px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    color: rgb(185, 178, 181);
-}
-@media screen and (max-width: 1400px) {
-    body {
-    
-            background-image: url(../assets/images/background.jpg);
-            background-size: 100%;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            overflow-x: hidden;
-    
-        }
-    .menu {
-            background-color: #0f0f0e;
-            padding: 10px;
-           
-        }
-        
-    .menu__logo {
-            width: 230px;
-        
-        }
-    .pages {
-            font-size: 1.2rem;
-        }
-    .home__two {
-            background-color: #0f0f0e;
-            grid-column-gap: 80px;
-            grid-row-gap: 30px;
-            padding: 100px;
-    
-    
-        }
-    .home_two--title {
-            font-size: 2rem;
-            
-        }
-    
-    .home_two--title2 {
-           font-size: 1.2rem;
-    
-        }
-    
-    .home__spotify {
-            width: 280px;
-    
-        }
-    
-    .home_two--title3 {
-        font-size: 1.2rem;
-        }
-    
-    .home__video {
-            width: 400px;
-        }
-    .socialContent {
-            grid-template-columns: 60px 60px;
-            grid-template-rows: 70px 70px 70px 70px 70px 70px;
-            margin: 40px 230px;
-    
-        }
-    .news__img {
-            width: 400px;
-            padding: 20px;
-            grid-area: news__img;
-        }
-    .songs {
-            display: grid;
-            grid-template-columns: repeat(2 1fr);
-            grid-template-rows: repeat(4 1fr);
-            grid-template-areas:
-            "song__card song__card "
-            "song__card song__card "
-            "song__card song__card "
-            "song__card song__card "
-    ;
-
-}
-    .form {
-            width: 700px;
-            height: 650px;
-            font-size: 30px;
-            padding: 1rem;
-            margin: 30px 60px;
-    
-
-     }
-
-#name,
-#mail,
-#password,
-#birthaday {
-    
+  #name,
+  #mail,
+  #password,
+  #birthaday {
     font-size: 15px;
-   
-}
+  }
 
-.btn {
-    
+  .btn {
     font-size: 15px;
     padding: 0.5rem;
-    
-
-}
-    
+  }
 }
 @media screen and (max-width: 1200px) {
-
 }
 @media screen and (max-width: 1024px) {
-    
-    .title {
-            
-            font-size: 3rem;
-           
-        }
-    .song__card {
-            padding: 10px;
-            width: 250px;
-    
-        }
-    .home__spotify {
-           width: 220px;
-    
-        }
-
-    .tour__pic {
-        width: 200px;
-
-}
 }
 @media screen and (max-width: 768px) {
-    
-    .home {
-            display: grid;
-            grid-template-columns: 1fr ;
-            grid-template-rows: 0.5fr repeat(2 1fr);
-            grid-template-areas:
-                "title"
-                "home_gif"
-                "home_paragraph";
-            grid-column-gap: 2px;
-            grid-row-gap: 2px;
-    
-        }
-    .home_gif {
-            width: 270px;
-
-        }
-    .title {
-            
-            font-size: 3rem;
-        }
-    .home__two {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(5 1fr);
-            grid-template-areas:
-                "home_two--title "
-                "home_two--title2 "
-                "home__spotify "
-                "home_two--title3"
-                "home__video"
-            ;
-        }
-    
-        .home_two--title {
-            font-size: 3rem;
-        }
-    
-        .tour {
-    
-            display: flex;
-            flex-direction: column;
-        }
-    
-        .tour__title {
-            
-            font-size: 2rem;
-
-        }
-    
-        .tour__pic {
-            width: 250px;
-            padding: 10px;
-        }
-
-        .socialContent {
-            
-            
-            grid-template-columns: 60px 60px;
-            grid-template-rows: 70px 70px 70px 70px 70px 70px;
-             margin: 40px 5px;
-        
-                }
-        
-                .icon {
-                    width: 30px;
-                    height: 30px;
-                }
-        
-    
-        .news__title1 {
-            font-size: 1.2rem;
-           
-        }
-        .form {
-            width: 500px;
-            height: 450px;
-            font-size: 0.8rem;
-            border-radius: 1rem;
-           
-        }
-        .btn {
-            background-color: #0f0f0e;
-            font-size: 0.8rem;
-            padding: 1rem;
-            margin: 2rem;
-            color: rgb(172, 182, 191);
-    
-        }
 }
 @media screen and (max-width: 600px) {
-        
-            .home_gif {
-                width: 250px;
-        
-            }
-        
-            .title {
-        
-                font-size: 2rem;
-            }
-        
-        
-            .home_two--title {
-                font-size: 2rem;
-            }
-        
-            .tour__title {
-        
-                font-size: 2rem;
-        
-            }
-        
-            .tour__pic {
-                width: 200px;
-                padding: 10px;
-            }
-        
-            .news__title1 {
-                font-size: 1.2rem;
-        
-            }
-        
-            .form {
-                width: 500px;
-                height: 450px;
-                font-size: 0.8rem;
-                border-radius: 1rem;
-        
-            }
-        
-            .btn {
-                background-color: #0f0f0e;
-                font-size: 0.8rem;
-                padding: 1rem;
-                margin: 2rem;
-                color: rgb(172, 182, 191);
-        
-            }
 }
 @media screen and (max-width: 460px) {
-    .home__video {
-            width:250px ;
-        }
-    .songs {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(8 1fr);
-            grid-template-areas:
-            "song__card "
-            "song__card "
-            "song__card"
-            "song__card"
-            "song__card"
-            "song__card"
-            "song__card"
-            "song__card"
-            ;
-        }
-
-    .videos {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(8 1fr);
-            grid-template-areas:
-            "video__card"
-            "video__card "
-            "video__card"
-            "video__card"
-            "video__card"
-            "video__card"
-            "video__card"
-            "video__card"
-            ;
-        }
-    .form {
-            width: 400px;
-            height: 450px;
-            font-size:0.8rem;
-    
-           
-            border-radius: 1rem;
-           
-    
-        }
 }
+
 @media screen and (max-width: 320px) {
-    .form {
-            width: 275px;
-            height: 540px;
-            font-size: 0.9rem;
-            border-radius: 1rem;
-            
-    
-        }
-    .fieldset {
-            padding: 2px;
-            text-align: center;
-        }
 }

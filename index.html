@@ -13,6 +13,11 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/home__two.css" />
+    <link rel="stylesheet" href="./css/tour.css" />
+    <link rel="stylesheet" href="./css/social_content.css" />
     <title>BLINKS CLUB</title>
   </head>
 
@@ -23,11 +28,12 @@
           <a href="index.html">
             <img class="menu__logo" src="./assets/images/logo.png" />
           </a>
-
-          <a href="./pages/news.html" class="pages">News</a>
-          <a href="./pages/songs_videos.html" class="pages">Songs & Videos</a>
-          <a href="./pages/pinks.html" class="pages">Pinks</a>
-          <a href="./pages/subscribe.html" class="pages">Subscribe</a>
+          <div class="page">
+            <a href="./pages/news.html" class="pages">News</a>
+            <a href="./pages/songs_videos.html" class="pages">Songs & Videos</a>
+            <a href="./pages/pinks.html" class="pages">Pinks</a>
+            <a href="./pages/subscribe.html" class="pages">Subscribe</a>
+          </div>
         </nav>
       </div>
     </header>
@@ -35,66 +41,80 @@
     <main>
       <div class="home">
         <h1 class="title">Welcome to this BLACKPINK fan site!</h1>
-        <p class="home_paragraph">
-          This is a place where you can find information about the pinks,
-          videos, their songs, concerts and last news about the group and the
-          girls! If you want more content, please subscribe!
-        </p>
-        <img
-          class="home_gif"
-          data-aos="fade-down"
-          data-aos-easing="linear"
-          data-aos-duration="1500"
-          src="./assets/images/homegif.gif"
-        />
+
+        <div class="container__home">
+          <img
+            class="home_gif"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+            src="./assets/images/homegif.gif"
+          />
+          <p class="home_paragraph">
+            This is a place where you can find information about the pinks,
+            videos, their songs, concerts and last news about the group and the
+            girls! If you want more content, please subscribe!
+          </p>
+        </div>
       </div>
 
       <div class="home__two">
-        <h2 class="home_two--title">BLACKPINK "Shut Down"</h2>
-        <h2
-          class="home_two--title2"
-          data-aos="fade-up"
-          data-aos-duration="3000"
-        >
-          Listen SHUT DOWN on Spotify
+        <h2 class="home_two--title" data-aos="fade-up" data-aos-duration="3000">
+          BLACKPINK "Shut Down"
         </h2>
-        <iframe
-          class="home__spotify"
-          data-aos="fade-up"
-          data-aos-duration="3000"
-          style="border-radius: 12px"
-          src="https://open.spotify.com/embed/track/0ARKW62l9uWIDYMZTUmJHF?utm_source=generator"
-          width="100%"
-          height="352"
-          frameborder="0"
-          allowfullscreen=""
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"
-        ></iframe>
-        <h2
-          class="home_two--title3"
-          data-aos="fade-up"
-          data-aos-duration="3000"
-        >
-          Click on the gif below to watch the video
-        </h2>
+        <div class="container__home">
+          <div class="container__home--card">
+            <h2
+              class="home_two--title2"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              Listen to SHUT DOWN on Spotify
+            </h2>
+            <iframe
+              class="home__spotify"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/track/0ARKW62l9uWIDYMZTUmJHF?utm_source=generator"
+              width="100%"
+              height="352"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
 
-        <a href="https://youtu.be/POe9SOEKotk" target="_blank">
-          <img
-            class="home__video"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            src="./assets/images/shutdown_gif.gif"
-          />
-        </a>
+          <div class="container__home--card">
+            <h2
+              class="home_two--title2"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              Click on the gif below to watch the video
+            </h2>
+            <div
+              class="home__video"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <a href="https://youtu.be/POe9SOEKotk" target="_blank">
+                <img
+                  class="home__video--img"
+                  src="./assets/images/shutdown_gif.gif"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <h1 class="tour__title">Born Pink World Tour</h1>
-        <div
-          class="tour"
-          data-aos="fade-up"
-          data-aos-anchor-placement="bottom-bottom"
-        >
+
+      <div class="tour">
+        <h1 class="tour__title" data-aos="fade-up" data-aos-duration="3000">
+          Born Pink World Tour
+        </h1>
+        <div class="tour__content">
           <img
             class="tour__pic"
             src="./assets/images/tour_poster_asia_1080x1620_v01s.jpg"
@@ -113,8 +133,11 @@
           />
         </div>
       </div>
+
       <div>
-        <h1 class="tour__title">BLACKPINK SOCIAL MEDIA</h1>
+        <h1 class="tour__title" data-aos="fade-up" data-aos-duration="3000">
+          BLACKPINK SOCIAL MEDIA
+        </h1>
         <div class="socialContent" data-aos="fade-up" data-aos-duration="3000">
           <img src="./assets/images/Twitter.png" class="icon" />
           <a
