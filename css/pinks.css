@@ -41,7 +41,7 @@
 }
 .pink__info {
   display: flex;
-  padding: 50px;
+  padding: 10px;
   margin: 50px 100px;
 }
 .pink__info2 {
@@ -145,10 +145,12 @@
   }
   .pink__info,
   .pink__info2 {
-    margin: 0px 30px;
+    margin: 0px 0px;
+    padding: 5px;
   }
   .pink__img1,
   .pink__img2 {
+    margin: 16px 20px;
     width: 300px;
   }
 }

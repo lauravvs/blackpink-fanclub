@@ -44,3 +44,9 @@
     width: 270px;
   }
 }
+@media screen and (max-width: 600px) {
+  .home_two--title2 {
+    font-size: 1.2rem;
+    margin: 0px 8px;
+  }
+}
