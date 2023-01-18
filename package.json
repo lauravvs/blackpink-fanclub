@@ -1,0 +1,25 @@
+{
+  "name": "blackpink-fanclub",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css", 
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lauravvs/blackpink-fanclub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lauravvs/blackpink-fanclub/issues"
+  },
+  "homepage": "https://github.com/lauravvs/blackpink-fanclub#readme",
+  "description": "This is a website creatited for a korean girl group who has many fans around the world. The main idea is have an space where you can share information about the bandmates and updates about the group in general",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

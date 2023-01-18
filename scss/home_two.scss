@@ -1,0 +1,89 @@
+body{
+    background-image: url(../assets/images/background.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    .home__two {
+            background-color: #0f0f0e;
+    
+    
+            .home_two--title {
+                font-family: "Londrina Outline", cursive;
+                color: rgb(199, 94, 136);
+                font-size: 3rem;
+                text-align: center;
+            }
+    
+            .container__home {
+                align-items: center;
+                display: flex;
+                gap: 30px;
+                justify-content: center;
+    
+                .container__home--card {
+                    margin: 30px;
+    
+                    .home_two--title2 {
+                        color: rgb(212, 212, 211);
+                        font-size: 1.8rem;
+                    }
+    
+                    .home__spotify {
+                        width: 400px;
+                        margin: 50px;
+                    }
+    
+                    .home__video {
+                        .home__video--img {
+                            margin: 50px;
+                            width: 500px;
+                            border-radius: 5%;
+                            border: 5px solid rgb(232, 104, 166);
+    
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+
+
+$vista: desktop;
+
+body {
+
+    @if $vista == desktop {
+        @media screen and (max-width: 1200px) {
+                .container__home {
+                    flex-direction: column;
+                }
+            } 
+        }@else if $vista == mobile {
+        
+            @media screen and (max-width: 768px) {
+                .home_two--title2 {
+                    font-size: 1.4rem;
+                }
+        
+                .home__spotify {
+                    width: 250px;
+                }
+        
+                .home__video--img {
+                    width: 270px;
+                }
+            }
+        } @else if $vista==mobile1 {
+        
+            @media screen and (max-width: 600px) {
+                .home_two--title2 {
+                    font-size: 1.2rem;
+                    margin: 0px 8px;
+                }
+            }
+        }
+    }

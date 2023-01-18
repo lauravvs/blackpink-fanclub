@@ -1,0 +1,206 @@
+
+main{
+    .pink__card {
+            display: flex;
+            margin: 50px 300px;
+
+            .pink__title {
+                    font-family: "Londrina Outline", cursive;
+                    color: rgb(88, 5, 33);
+                    font-size: 3rem;
+                    text-align: center;
+                    margin-top: 50px;
+                }
+            .pink__pic {
+                    width: 300px;
+                    margin: 20px;
+                    border: 5px solid rgb(222, 106, 155);
+                }
+            .pink__ph {
+                    font-size: 1.5rem;
+                }
+        }
+
+    .pink__content {
+        background-color: #0f0f0e;
+        .pink__info {
+                display: flex;
+                padding: 10px;
+                margin: 50px 100px;
+            }
+        .pink__info2 {
+            display: flex;
+            padding: 50px;
+            margin: 50px 100px;
+        }
+        .pink__img1,
+        .pink__img2 {
+            width: 500px;
+            margin: 20px;
+            border: 3px dashed rgb(223, 121, 184);
+                &:hover{
+                    transform: scale(1.3);
+            }
+        }
+        .pink__ph1,
+        .pink__ph2 {
+            color: rgb(176, 193, 193);
+            font-size: 1.5rem;
+            padding: 50px;
+        }
+}
+}
+
+$vista: desktop;
+body{ 
+    @if $vista == desktop {
+    @media screen and (max-width: 1440px) {
+            .pink__card {
+                flex-direction: column;
+                margin: 50px 280px;
+            }
+    
+            .pink__info,
+            .pink__info2 {
+                flex-direction: column;
+            }
+        }
+    } @else if $vista == desktop1 {
+    
+        @media screen and (max-width: 1024px) {
+            .pink__card {
+                margin: 45px 230px;
+            }
+    
+            .pink__title {
+                font-size: 2.3rem;
+                margin-top: 12px;
+            }
+    
+            .pink__pic {
+                width: 250px;
+                margin: 11px;
+            }
+    
+            .pink__ph {
+                font-size: 1.2rem;
+            }
+        }
+} @else if $vista == mobile {
+    
+        @media screen and (max-width: 768px) {
+            .pink__card {
+                margin: 20px 120px;
+            }
+    
+            .pink__title {
+                font-size: 2rem;
+                margin-top: 10px;
+            }
+    
+            .pink__pic {
+                width: 200px;
+                margin: 9px;
+            }
+    
+            .pink__info,
+            .pink__info2 {
+                margin: 10px 50px;
+            }
+    
+            .pink__ph {
+                font-size: 1rem;
+            }
+    
+            .pink__img1,
+            .pink__img2 {
+                width: 390px;
+                margin: 0px;
+            }
+    
+            .pink__ph1,
+            .pink__ph2 {
+                font-size: 1rem;
+            }
+        }
+} @else if $vista == mobile1 {
+    
+        @media screen and (max-width: 600px) {
+            .pink__card {
+                margin: 10px 100px;
+            }
+    
+            .pink__title {
+                font-size: 2rem;
+                margin-top: 7px;
+            }
+    
+            .pink__pic {
+                width: 180px;
+                margin: 6px;
+            }
+    
+            .pink__ph {
+                font-size: 1rem;
+            }
+    
+            .pink__info,
+            .pink__info2 {
+                margin: 0px 30px;
+            }
+    
+            .pink__img1,
+            .pink__img2 {
+                width: 320px;
+            }
+        }
+} @else if $vista== mobile2{
+    
+        @media screen and (max-width: 460px) {
+            .pink__card {
+                margin: 8px 50px;
+            }
+    
+            .pink__title {
+                font-size: 2rem;
+                margin-top: 4px;
+            }
+    
+            .pink__pic {
+                width: 120px;
+                margin: 3px;
+            }
+    
+            .pink__ph {
+                font-size: 1rem;
+            }
+    
+            .pink__info,
+            .pink__info2 {
+                margin: 0px 0px;
+                padding: 5px;
+            }
+    
+            .pink__img1,
+            .pink__img2 {
+                margin: 16px 20px;
+                width: 300px;
+            }
+        }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

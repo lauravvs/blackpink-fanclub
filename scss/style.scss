@@ -1,0 +1,30 @@
+@import "./home.scss";
+@import "./home_two.scss";
+@import "./menu.scss";
+@import "./news.scss";
+@import "./pinks.scss";
+@import "./social_content.scss";
+@import "./song_videos.scss";
+@import "./subscribe.scss";
+@import "./tour.scss";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../assets/images/background.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.footer {
+    background-color: #0f0f0e;
+    padding: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(185, 178, 181);
+}
