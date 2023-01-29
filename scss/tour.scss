@@ -29,10 +29,10 @@ body{
     @if $vista== desktop {
         @media screen and (max-width: 1400px) {
                 .tour__content {
-                    display: grid;
-                    grid-template-columns: repeat(2 1fr);
-                    grid-template-rows: repeat(2 1fr);
+                    display: flex;
+                    flex-direction: column !important;
+                    
                 }
     }
-    }
+    } 
 }

@@ -19,10 +19,27 @@
     font-size: 1.5rem; }
 
 @media screen and (min-width: 1400px) {
-  body .container__home {
+  main .home .container__home {
     margin: 50px 500px; }
-  body .home__gif {
-    width: 400px; } }
+    main .home .container__home .home_gif {
+      width: 400px; } }
+
+@media screen and (max-width: 768px) {
+  main .home .container__home {
+    flex-direction: column; }
+    main .home .container__home .home_gif {
+      width: 350px; }
+  main .home .container__home .home_paragraph {
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 600px) {
+  main .home .container__home .home_gif {
+    width: 200px; }
+  main .home .container__home.home_paragraph {
+    font-size: 1rem;
+    margin: 5px; }
+  main .home h2 {
+    font-size: 1rem; } }
 
 body {
   background-image: url(../assets/images/background.jpg);
@@ -59,8 +76,21 @@ body {
             transform: scale(1.2); }
 
 @media screen and (max-width: 1200px) {
-  body .container__home {
-    flex-direction: column; } }
+  main .home__two .container__home {
+    flex-direction: column;
+    text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  main .home__two .container__home .container__home--card .home_two--title2 {
+    font-size: 1.2rem; }
+    main .home__two .container__home .container__home--card .home_two--title2 .home__spotify {
+      width: 100px; }
+    main .home__two .container__home .container__home--card .home_two--title2 .home__video .home__video--img {
+      width: 100px; } }
+
+@media screen and (max-width: 600px) {
+  main .home__two .container__home .container__home--card .home_two--title2 {
+    margin: 0px 8px; } }
 
 .menu {
   background-color: #0f0f0e;
@@ -113,30 +143,74 @@ main .news .news__ph1 {
   padding: 20px; }
 
 @media screen and (max-width: 1500px) {
-  body .new1 {
+  main .news .new1 {
     margin: 20px 250px; }
-  body .news__title1 {
+  main .news .news__title1 {
     font-size: 1.8rem; }
-  body .news__img {
+  main .news .news__img {
     width: 550px; }
-  body .news__ph1 {
+  main .news .news__ph1 {
     font-size: 1.5rem; } }
+
+@media screen and (max-width: 1100px) {
+  main .news .new1 {
+    margin: 10px 200px; }
+  main .news .news__title1 {
+    font-size: 1.6rem; }
+  main .news .news__img {
+    width: 500px; }
+  main .news .news__ph1 {
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 959px) {
+  main .news .new1 {
+    margin: 7px 50px; }
+  main .news .news__title1 {
+    font-size: 1.3rem; }
+  main .news .news__img {
+    width: 400px; }
+  main .news .news__ph1 {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 600px) {
+  main .news .new1 {
+    margin: 2px 30px; }
+  main .news .news__img {
+    width: 350px; } }
+
+@media screen and (max-width: 460px) {
+  main .news .new1 {
+    margin: 1px 5px; }
+  main .news .news__title {
+    font-size: 1rem; }
+  main .news .news__img {
+    width: 300px; } }
+
+@media screen and (max-width: 320px) {
+  main .news .new1 {
+    margin: 1px 2px; }
+  main .news .news__img {
+    width: 180px; } }
 
 main .pink__card {
   display: flex;
-  margin: 50px 300px; }
-  main .pink__card .pink__title {
-    font-family: "Londrina Outline", cursive;
-    color: #580521;
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 50px; }
-  main .pink__card .pink__pic {
-    width: 300px;
-    margin: 20px;
-    border: 5px solid #de6a9b; }
-  main .pink__card .pink__ph {
-    font-size: 1.5rem; }
+  margin: 50px 150px;
+  align-items: center; }
+
+main .pink__title {
+  font-family: "Londrina Outline", cursive;
+  color: #580521;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 50px; }
+
+main .pink__pic {
+  width: 300px;
+  border-radius: 20%;
+  margin: 20px; }
+
+main .pink__ph {
+  font-size: 1.5rem; }
 
 main .pink__content {
   background-color: #0f0f0e; }
@@ -163,12 +237,50 @@ main .pink__content {
     padding: 50px; }
 
 @media screen and (max-width: 1440px) {
-  body .pink__card {
-    flex-direction: column;
-    margin: 50px 280px; }
-  body .pink__info,
-  body .pink__info2 {
+  main .pink__card {
     flex-direction: column; } }
+
+@media screen and (max-width: 1300px) {
+  main .pink__info {
+    flex-direction: column; }
+  main .pink__info2 {
+    flex-direction: column; } }
+
+@media screen and (max-width: 1220px) {
+  main .pink__card {
+    margin: 20px 70px; } }
+
+@media screen and (max-width: 800px) {
+  main .pink__content .pink__info {
+    margin: 0; }
+  main .pink__content .pink__info2 {
+    margin: 0; }
+  main .pink__content .pink__img1 {
+    width: 400px; }
+  main .pink__content .pink__img2 {
+    width: 400px; }
+  main .pink__content .pink__ph1 {
+    font-size: 1rem; }
+  main .pink__content .pink__ph2 {
+    font-size: 1rem; } }
+
+@media screen and (max-width: 580px) {
+  main .pink__card {
+    margin: 5px 10px; }
+  main .pink__pic {
+    width: 190px; }
+  main .pink__ph {
+    font-size: 1rem; }
+  main .pink__content .pink__info {
+    padding: 0; }
+  main .pink__content .pink__info2 {
+    padding: 0; } }
+
+@media screen and (max-width: 460px) {
+  main .pink__content .pink__img1 {
+    width: 300px; }
+  main .pink__content .pink__img2 {
+    width: 300px; } }
 
 .social_media .social__title {
   font-family: "Londrina Outline", cursive;
@@ -218,8 +330,21 @@ main .videos {
       transform: scale(1.2); }
 
 @media screen and (max-width: 1400px) {
-  body .songs {
-    grid-template-areas: "song__card song__card" "song__card song__card" "song__card song__card" "song__card song__card"; } }
+  main .songs {
+    grid-template-areas: "song__card song__card" "song__card song__card" "song__card song__card" "song__card song__card"; } }
+
+@media screen and (max-width: 960px) {
+  main .videos {
+    grid-template-areas: "video__card" "video__card" "video__card" "video__card" "video__card" "video__card" "video__card" "video__card"; } }
+
+@media screen and (max-width: 768px) {
+  main .song__card {
+    width: 250px; } }
+
+@media screen and (max-width: 600px) {
+  main .songs {
+    display: flex;
+    flex-direction: column; } }
 
 main .main__form {
   display: flex;
@@ -273,9 +398,8 @@ main .main__form {
 
 @media screen and (max-width: 1400px) {
   body .tour__content {
-    display: grid;
-    grid-template-columns: repeat(2 1fr);
-    grid-template-rows: repeat(2 1fr); } }
+    display: flex;
+    flex-direction: column !important; } }
 
 * {
   margin: 0;

@@ -1,129 +1,223 @@
-main{
+main {
+  .news__title {
+    font-family: "Londrina Outline", cursive;
+    color: rgb(195, 102, 139);
+    font-size: 3rem;
+    text-align: center;
+    margin: 100px;
+  }
+  .news {
+    .new1 {
+      margin: 50px 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .news__title1 {
+      font-size: 2rem;
+      color: rgb(161, 58, 99);
+      padding: 20px;
+    }
+    .news__img {
+      width: 600px;
+      padding: 20px;
+      border: 5px dotted rgb(110, 42, 64);
+    }
+    .news__ph1 {
+      font-size: 1.5rem;
+      padding: 20px;
+    }
+  }
+}
 
+@function setMargin($screen) {
+  $margin: null;
+
+  @if ($screen == desktop1) {
+    $margin: 20px 250px;
+  }
+
+  @if ($screen == desktop2) {
+    $margin: 10px 200px;
+  }
+
+  @if ($screen == desktop3) {
+    $margin: 7px 50px;
+  }
+
+  @if ($screen == mobile1) {
+    $margin: 2px 30px;
+  }
+
+  @if ($screen == mobile2) {
+    $margin: 1px 5px;
+  }
+
+  @if ($screen == mobile3) {
+    $margin: 1px 2px;
+  }
+
+  @return $margin;
+}
+
+@function setFontSizeTitle1($screen) {
+  $fontSize: null;
+
+  @if ($screen == desktop1) {
+    $fontSize: 1.8rem;
+  }
+
+  @if ($screen == desktop2) {
+    $fontSize: 1.6rem;
+  }
+
+  @if ($screen == desktop3) {
+    $fontSize: 1.3rem;
+  }
+
+  @if ($screen == mobile1) {
+    $fontSize: 2px 30px;
+  }
+
+  @if ($screen == mobile2) {
+    $fontSize: 1px 5px;
+  }
+
+  @if ($screen == mobile3) {
+    $fontSize: 1px 2px;
+  }
+
+  @return $fontSize;
+}
+
+@function setImgWidth($screen) {
+  $imgWidth: null;
+  @if ($screen == desktop1) {
+    $imgWidth: 550px;
+  }
+  @if ($screen == desktop2) {
+    $imgWidth: 500px;
+  }
+  @if ($screen == desktop3) {
+    $imgWidth: 400px;
+  }
+  @if ($screen == mobile1) {
+    $imgWidth: 350px;
+  }
+  @if ($screen == mobile2) {
+    $imgWidth: 300px;
+  }
+  @if ($screen == mobile3) {
+    $imgWidth: 180px;
+  }
+  @return $imgWidth;
+}
+@function setFontPh($screen) {
+  $fontPh: null;
+  @if ($screen == desktop1) {
+    $fontPh: 1.5rem;
+  }
+  @if ($screen== desktop2) {
+    $fontPh: 1.2rem;
+  }
+  @if ($screen == desktop3) {
+    $fontPh: 1rem;
+  }
+  @return $fontPh;
+}
+@function setFontTittle($screen) {
+  $fontTitle: null;
+  @if ($screen == mobile2) {
+    $fontTitle: 1rem;
+  }
+  @return $fontTitle;
+}
+
+main .news {
+  @media screen and (max-width: 1500px) {
+    .new1 {
+      margin: setMargin(desktop1);
+    }
+
+    .news__title1 {
+      font-size: setFontSizeTitle1(desktop1);
+    }
+
+    .news__img {
+      width: setImgWidth(desktop1);
+    }
+
+    .news__ph1 {
+      font-size: setFontPh(desktop1);
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .new1 {
+      margin: setMargin(desktop2);
+    }
+
+    .news__title1 {
+      font-size: setFontSizeTitle1(desktop2);
+    }
+
+    .news__img {
+      width: setImgWidth(desktop2);
+    }
+
+    .news__ph1 {
+      font-size: setFontPh(desktop2);
+    }
+  }
+
+  @media screen and (max-width: 959px) {
+    .new1 {
+      margin: setMargin(desktop3);
+    }
+
+    .news__title1 {
+      font-size: setFontSizeTitle1(desktop3);
+    }
+
+    .news__img {
+      width: setImgWidth(desktop3);
+    }
+
+    .news__ph1 {
+      font-size: setFontPh(desktop3);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .new1 {
+      margin: setMargin(mobile1);
+    }
+
+    .news__img {
+      width: setImgWidth(mobile1);
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    .new1 {
+      margin: setMargin(mobile2);
+    }
     .news__title {
-        font-family: "Londrina Outline", cursive;
-        color: rgb(195, 102, 139);
-        font-size: 3rem;
-        text-align: center;
-        margin: 100px;
-    }
-    .news{
-        .new1 {
-                margin: 50px 500px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-        .news__title1 {
-            font-size: 2rem;
-            color: rgb(161, 58, 99);
-            padding: 20px;
-        }
-        .news__img {
-            width: 600px;
-            padding: 20px;
-            border: 5px dotted rgb(110, 42, 64);
-        }
-        .news__ph1 {
-            font-size: 1.5rem;
-            padding: 20px;
-        }
-    }
-}
-
-$vista : desktop;
-
-body{
-    @if $vista== desktop {
-    @media screen and (max-width: 1500px) {
-        .new1 {
-            margin: 20px 250px;
-        }
-
-        .news__title1 {
-            font-size: 1.8rem;
-        }
-
-        .news__img {
-            width: 550px;
-        }
-
-        .news__ph1 {
-            font-size: 1.5rem;
-        }
-    }
-} @else if $vista == desktop1 {
-
-    @media screen and (max-width: 1100px) {
-       
-        .new1 {
-            margin: 10px 200px;
-        }
-
-        .news__title1 {
-            font-size: 1.6rem;
-        }
-
-        .news__img {
-            width: 500px;
-        }
-
-        .news__ph1 {
-            font-size: 1.2rem;
-        }
-    }
-}@else if $vista == desktop2 {
-
-    @media screen and (max-width: 959px) {
-        .new1 {
-            margin: 7px 50px;
-        }
-
-        .news__title1 {
-            font-size: 1.3rem;
-        }
-
-        .news__img {
-            width: 450px;
-        }
-
-        .news__ph1 {
-            font-size: 1rem;
-        }
-    }
-} @else if $vista == mobile{
-
-    @media screen and (max-width: 600px) {
-        .new1 {
-            margin: 2px 30px;
-        }
-
-        .news__img {
-            width: 400px;
-        }
-    }
-} @else if $vista = mobile1{
-
-    @media screen and (max-width: 460px) {
-        .new1 {
-            margin: 1px 5px;
-        }
-
-        .news__img {
-            width: 320px;
-        }
-    }
-}@else if $vista == mobile2{
-
-    @media screen and (max-width: 320px) {
-        .new1 {
-            margin: 1px 2px;
-        }
-
-        .news__img {
-            width: 280px;
-        }
+      font-size: setFontTittle(mobile2);
     }
 
-}
+    .news__img {
+      width: setImgWidth(mobile2);
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .new1 {
+      margin: setMargin(mobile3);
+    }
+
+    .news__img {
+      width: setImgWidth(mobile3);
+    }
+  }
 }

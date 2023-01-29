@@ -1,0 +1,30 @@
+.menu {
+  background-color: #0f0f0e;
+  padding: 12px;
+}
+.menu nav .menu__logo {
+  width: 305px;
+}
+.menu nav .page {
+  display: flex;
+  justify-content: end;
+}
+.menu nav .page .pages {
+  color: rgb(209, 220, 220);
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin: 0px 20px;
+}
+.menu nav .page .pages:hover {
+  color: rgb(220, 137, 174);
+}
+
+@media screen and (max-width: 1200px) {
+  body .page {
+    display: flex;
+    flex-direction: column;
+  }
+  body .pages {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=menu.css.map */

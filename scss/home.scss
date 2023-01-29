@@ -1,72 +1,85 @@
-.home{
-    .title {
-            font-family: "Londrina Outline", cursive;
-            color: rgb(199, 94, 136);
-            font-size: 3rem;
-            text-align: center;
-            margin-top: 150px;
-        }
-    .container__home {
-            align-items: center;
-            display: flex;
-            gap: 30px;
-            justify-content: center;
-            .home_gif {
-                    width: 400px;
-                    border-radius: 10%;
-                    border: 10px dotted rgb(243, 160, 201);
-                }
-            
-            .home_paragraph {
-                    font-family: inherit;
-                    font-size: 1.5rem;
-                }
-        }
-
-    
-}
-$vista: desktop;
-body{
-    @if $vista == desktop {
-        @media screen and (min-width: 1400px) {
-                .container__home {
-                    margin: 50px 500px;
-                }
-        
-                .home__gif {
-                    width: 400px;
-                }
-        } 
-    }@else if $vista == mobile {
-        
-            @media screen and (max-width: 768px) {
-                .container__home {
-                    flex-direction: column;
-                }
-        
-                .home_gif {
-                    width: 380px;
-                }
-        
-                .home_paragraph {
-                    font-size: 1.4rem;
-                }
-            }
-        } @else if $vista == mobile1 {
-        
-            @media screen and (max-width: 600px) {
-                .home_gif {
-                    width: 250px;
-                }
-        
-                .home_paragraph {
-                    font-size: 1.2rem;
-                    margin: 5px;
-                }
-        
-                h2 {
-                    font-size: 1rem;
-                }
-            }
-        }
+.home {
+  .title {
+    font-family: "Londrina Outline", cursive;
+    color: rgb(199, 94, 136);
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 150px;
+  }
+  .container__home {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    .home_gif {
+      width: 400px;
+      border-radius: 10%;
+      border: 10px dotted rgb(243, 160, 201);
     }
+
+    .home_paragraph {
+      font-family: inherit;
+      font-size: 1.5rem;
+    }
+  }
+}
+@function setMargin($screen) {
+  $margin: null;
+  @if ($screen == desktop) {
+    $margin: 50px 500px;
+  }
+  @if ($screen ==mobile2) {
+    $margin: 5px;
+  }
+  @return $margin;
+}
+@function setGifWidth($screen) {
+  $width: null;
+  @if ($screen == desktop) {
+    $width: 400px;
+  }
+  @if ($screen== desktop2) {
+    $width: 350px;
+  }
+  @if ($screen == mobile) {
+    $width: 200px;
+  }
+  @return $width;
+}
+main .home {
+  @media screen and (min-width: 1400px) {
+    .container__home {
+      margin: setMargin(desktop);
+      .home_gif {
+        width: setGifWidth(desktop);
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .container__home {
+      flex-direction: column;
+      .home_gif {
+        width: setGifWidth(desktop2);
+      }
+    }
+
+    .container__home .home_paragraph {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .container__home .home_gif {
+      width: setGifWidth(mobile);
+    }
+
+    .container__home.home_paragraph {
+      font-size: 1rem;
+      margin: setMargin(mobile2);
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+  }
+}
