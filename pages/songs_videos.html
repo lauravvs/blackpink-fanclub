@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/menu.css" />
     <link rel="stylesheet" href="../css/song_videos.css" />
+    <script defer src="../js/songs.js"></script>
     <title>SONGS & VIDEOS BP</title>
   </head>
   <body>
@@ -33,11 +34,13 @@
             <img class="menu__logo" src="../assets/images/logo.webp" />
           </a>
           <div class="page">
+            <a href="../pages/logIn.html" class="pages">Log In</a>
             <a href="../pages/news.html" class="pages">News</a>
             <a href="../pages/songs_videos.html" class="pages"
               >Songs & Videos</a
             >
             <a href="../pages/pinks.html" class="pages">Pinks</a>
+            <a href="../pages/shop.html" class="pages">Shop</a>
             <a href="../pages/subscribe.html" class="pages">Subscribe</a>
           </div>
         </nav>
@@ -142,6 +145,16 @@
             loading="lazy"
           ></iframe>
         </div>
+      </div>
+
+      <div class="typeSong">
+        <h1>
+          Do you know every blackpink song? Click on the button below to see
+          them with its info!
+        </h1>
+
+        <button onClick="showSongs()">Songs+Info!</button>
+        <p id="array"></p>
       </div>
 
       <h1 class="song__title">BLACKPINK MUSIC VIDEOS</h1>

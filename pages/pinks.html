@@ -20,6 +20,7 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <script defer src="../js/pinkQuizz.js"></script>
 
     <title>PINK MEMBERS</title>
   </head>
@@ -31,11 +32,13 @@
             <img class="menu__logo" src="../assets/images/logo.webp" />
           </a>
           <div class="page">
+            <a href="../pages/logIn.html" class="pages">Log In</a>
             <a href="../pages/news.html" class="pages">News</a>
             <a href="../pages/songs_videos.html" class="pages"
               >Songs & Videos</a
             >
             <a href="../pages/pinks.html" class="pages">Pinks</a>
+            <a href="../pages/shop.html" class="pages">Shop</a>
             <a href="../pages/subscribe.html" class="pages">Subscribe</a>
           </div>
         </nav>
@@ -208,6 +211,32 @@
           </p>
           <img class="pink__img2" src="../assets/images/jisoo3.gif" />
         </div>
+      </div>
+      <div id="quizz">
+        <h1>
+          Do you wanna know which BP memeber you are? Answer the following
+          questions
+        </h1>
+        <form id="quizForm" onsubmit="return false;">
+          <label>"What do you prefer, cold or hot?"</label>
+          <input type="radio" name="question1" value="cold" />cold<br />
+          <input type="radio" name="question1" value="hot" />hot<br />
+          <label>"What do you prefer, music or dance?"</label>
+          <input type="radio" name="question2" value="music" />music<br />
+          <input type="radio" name="question2" value="dance" />dance<br />
+          <label>"What do you prefer, parties or chill?"</label>
+          <input type="radio" name="question3" value="parties" />parties<br />
+          <input type="radio" name="question3" value="chill" />chill<br />
+          <label>"What do you prefer, videogames or movies?"</label>
+          <input
+            type="radio"
+            name="question4"
+            value="videogames"
+          />videogames<br />
+          <input type="radio" name="question4" value="movies" />movies<br />
+          <button onClick="submitQuiz()">Submit</button>
+        </form>
+        <p id="quizResult"></p>
       </div>
     </main>
     <footer><p class="footer">BLACKPINK in your area ©</p></footer>
